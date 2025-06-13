@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from 'react';
 import CardLogin from '../CardLogin/Cardlogin';
+import { AnimatePresence } from 'framer-motion';
 import './Navigationbar.css';
 // ...restante do código
 
@@ -28,10 +29,10 @@ export default function Navigation() {
                 </div>
             </nav>
             {isOpen && (
-                <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+                <AnimatePresence mode="wait">
                     <CardLogin onClose={() => setIsOpen(false)} />
-                </div>
+                </AnimatePresence>
             )}
         </>
-    )
+    )   
 }

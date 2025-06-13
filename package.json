@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "aura-ui": "^1.0.8",
+    "framer-motion": "^12.18.1",
+    "motion-plus": "^1.2.0",
     "next": "15.3.3",
     "ogl": "^1.0.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
