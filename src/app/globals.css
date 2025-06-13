@@ -1,9 +1,6 @@
 
 :root {
   --background: #000000;
-  --foreground: #333333;
-  --primary: #6200ea;
-  --secondary: #03dac6;
 }
 
 * {
@@ -20,6 +17,17 @@ body {
 }
 
 .Aurora-container {
-  height: 700px;
+  height: 100%;
   width: 100%;
+}
+
+.Main-panel {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
