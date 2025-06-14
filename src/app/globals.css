@@ -19,10 +19,21 @@ body {
 .Aurora-container {
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
-.Main-panel {
-  height: 100%;
+.revealed {
+  width: 45rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding-top: 4rem;
+  margin: 0rem 3rem;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+}
+
+.Panel-project {
   width: 100%;
   position: fixed;
   top: 0;

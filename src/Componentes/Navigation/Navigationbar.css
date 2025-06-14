@@ -1,4 +1,6 @@
 .navigation-bar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -17,6 +19,7 @@
     font-weight: bold;
     padding: 10px 30px;
     border: solid 1px #ffffff;
+    font-family: "Poppins", sans-serif;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
