@@ -46,7 +46,7 @@
 
 .Button-close:hover {
     background-color: #0a0a0a;
-    color: #5e0101;
+    color: #00ac00;
 }
 .Button-close:active {
     transform: scale(0.95);
