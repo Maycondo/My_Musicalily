@@ -42,9 +42,8 @@ export default function WavyText() {
             className="h1"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
->
-                Spotify <span className="wavy">Premium</span>.
+                transition={{ duration: 0.6, ease: "easeOut" }}>
+                Spotify <span className="wavy">Conecte</span>.
             </motion.h1>
             <Stylesheet />
         </div>

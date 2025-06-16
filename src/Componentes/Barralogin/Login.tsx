@@ -3,8 +3,7 @@
 import React, { useState } from 'react';
 import CardLogin from '../CardLogin/Cardlogin';
 import { AnimatePresence } from 'framer-motion';
-import './Navigationbar.css';
-// ...restante do código
+import './Login.css';
 
 
 export default function Navigation() {

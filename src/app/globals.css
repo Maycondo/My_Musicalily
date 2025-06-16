@@ -23,12 +23,18 @@ body {
 }
 
 .revealed {
-  width: 45rem;
+  height: 35rem;
+  width: 50rem;
   color: #ffffff;
+  display: flex;
+  align-items: start;
+  justify-content: end;
   font-weight: 600;
-  padding-top: 4rem;
-  margin: 0rem 3rem;
-  font-size: 4rem;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(800px);
+  -webkit-backdrop-filter: blur(29px);
+  font-size: 5rem;
   font-family: "Poppins", sans-serif;
   line-height: 1;
 }

@@ -10,13 +10,7 @@ interface CardLoginProps {
 export default function CardLogin({ onClose }: CardLoginProps) {
     return (
         <div className="Card-backdrop-filter" >
-            <motion.div 
-                className="Conteiner-CardLogin"
-                initial={{ opacity: 0, filter: "blur(10px)" }}
-                animate={{ opacity: 1, filter: "blur(0px)" }}
-                exit={{ opacity: 0, filter: "blur(10px)" }}
-                transition={{ duration: 0.5 }}
-            >
+            <motion.div  className="Conteiner-CardLogin" initial={{ opacity: 0, filter: "blur(10px)" }} animate={{ opacity: 1, filter: "blur(0px)" }} exit={{ opacity: 0, filter: "blur(10px)" }} transition={{ duration: 0.5 }} >
             <motion.button type="button" onClick={onClose} className="Button-close" aria-label="Close" whileHover={{ scale: 1.2, rotate: 90 }} whileTap={{ scale: 0.9 }}>
                 <IoClose className="Icon-close" />
             </motion.button>
@@ -26,12 +20,7 @@ export default function CardLogin({ onClose }: CardLoginProps) {
                     <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">
                         Username
                     </label>
-                    <input
-                        type="text"
-                        id="username"
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        placeholder="Enter your username"
-                    />
+                    <input type="text" id="username" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your username" />
                 </motion.div>
 
                 <motion.div className="mb-6" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} >
