@@ -10,41 +10,42 @@
 }
 
 body {
-  height: 100vh;
   width: 100%;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.Panel-project {
+  height: 100rem;
+  width: 100%;
+}
+
 .Aurora-container {
-  height: 100%;
+  position: relative;
+  height: 3%;
   width: 100%;
   z-index: 0;
 }
 
-.revealed {
-  height: 35rem;
-  width: 50rem;
-  color: #ffffff;
+.min-text {
+  width: auto;
   display: flex;
-  align-items: start;
-  justify-content: end;
-  font-weight: 600;
-  border-radius: 10%;
-  background: rgba(255, 255, 255, 0.034);
-  backdrop-filter: blur(800px);
-  -webkit-backdrop-filter: blur(29px);
-  font-size: 5rem;
-  font-family: "Poppins", sans-serif;
-  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
-.Panel-project {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+.revealed {
+  text-align: center;
+  color: #ffffff;
   display: flex;
-  flex-direction: column;
+  margin: 2rem 7rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 10%;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+    z-index: 1;
 }

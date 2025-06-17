@@ -3,7 +3,7 @@ import Aurora from './Aurora';
 import React, { useEffect, useState } from 'react';
 import LoginCard from '@/Componentes/Barralogin/Login';
 import DecryptedText from '@/Componentes/Animetiontexto/DecryptedText';
-import SplitText from '@/Componentes/Animetiontexto/SplitText';
+import BlurText from '@/Componentes/Animetiontexto/BlurText';
 
 import Loading from '@/Componentes/Loading/Loading';
 
@@ -18,7 +18,11 @@ import Loading from '@/Componentes/Loading/Loading';
     return loading;
   }
 
-export default function Home() {
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
+  export default function Home() {
   const loading = useLoading(3000);
 
   if(loading) {
@@ -27,17 +31,22 @@ export default function Home() {
 
 
   return (
-<div>
-  <Aurora colorStops={["#0fb809", "#21c201", "#28a103"]} blend={10.0} amplitude={2.0} speed={2.0}/>
-    <div className='Panel-project'>
-      <LoginCard />
-      <SplitText />
-      <DecryptedText
-        text="Uma forma simples e prática de ouvir suas músicas favoritas."
-        className="revealed"
-      />
-    </div>
-</div>
+      <div className='Panel-project' >
+        <Aurora colorStops={["#0fb809", "#21c201", "#28a103"]} blend={15.0} amplitude={4.0} speed={2.0}/>
+         <LoginCard />
+          <div>
+            <BlurText text="Musicalily | Sportify!" delay={150} animateBy="words" direction="top" onAnimationComplete={handleAnimationComplete} className="revealed"/>
+            <div className='min-text'>
+              <DecryptedText
+                text="Uma forma simples e prática de ouvir suas músicas favoritas.
+                  Descubra novos sons, crie playlists personalizadas e aproveite cada momento com a trilha sonora perfeita.
+                  Tudo isso em uma plataforma rápida, intuitiva e feita para quem ama música de verdade.
+                  Dê o play e sinta a vibe!"
+                className="revealed"
+              />
+            </div>
+          </div>
+      </div>
   );
 }
 
