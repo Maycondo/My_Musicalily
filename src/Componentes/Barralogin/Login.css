@@ -4,17 +4,15 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 10px 20px;
     background-color: none;
 }
 
 .navigation-bar button {
-    position: relative;
     overflow: hidden;
+    margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
     padding: 10px 30px;
@@ -47,12 +45,10 @@
     border-radius: 4px;
 }
 
-/* Ao passar o mouse, expande do centro */
 .navigation-bar button:hover::before {
     transform: translateX(-50%) scaleX(1);
 }
 
-/* Texto sempre acima da animação */
 .navigation-bar button span {
     position: relative;
     z-index: 1;

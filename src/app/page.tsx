@@ -31,11 +31,13 @@ const handleAnimationComplete = () => {
 
 
   return (
-      <div className='Panel-project' >
-        <Aurora colorStops={["#0fb809", "#21c201", "#28a103"]} blend={15.0} amplitude={4.0} speed={2.0}/>
+      <div className='Panel-principal' >
+        <Aurora colorStops={["#0fb809", "#21c201", "#28a103"]} blend={15.0} amplitude={6.0} speed={2.0}/>
          <LoginCard />
           <div>
-            <BlurText text="Musicalily | Sportify!" delay={150} animateBy="words" direction="top" onAnimationComplete={handleAnimationComplete} className="revealed"/>
+            <div className='text-Musicalily'>
+              <BlurText text="Musicalily | Sportify!" delay={150} animateBy="words" direction="top" onAnimationComplete={handleAnimationComplete} className="revealed"/>
+            </div>
             <div className='min-text'>
               <DecryptedText
                 text="Uma forma simples e prática de ouvir suas músicas favoritas.

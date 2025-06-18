@@ -76,7 +76,6 @@ function Stylesheet() {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 8rem 12rem;
         visibility: hidden;
       }
 
@@ -86,7 +85,6 @@ function Stylesheet() {
         font-family: "Poppins", sans-serif;
         color: #fff;
         text-align: center;
-        margin: 0;
       }
 
       .split-char {

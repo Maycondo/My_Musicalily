@@ -6,40 +6,51 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.Panel-project {
+.Panel-principal {
   height: 100rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Aurora-container {
-  position: relative;
-  height: 3%;
+  position: absolute;
   width: 100%;
+  height: 5%;
   z-index: 0;
 }
 
-.min-text {
-  width: auto;
+.text-Musicalily {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4rem;
+  padding: 4rem;
+}
+
+.min-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  padding: 4rem;
   z-index: 1;
 }
 
 .revealed {
+  width: 100%;
   text-align: center;
   color: #ffffff;
   display: flex;
-  margin: 2rem 7rem;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -47,5 +58,5 @@ body {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-    z-index: 1;
+  z-index: 1;
 }
