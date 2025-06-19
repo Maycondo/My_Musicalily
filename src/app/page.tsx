@@ -47,6 +47,7 @@ const handleAnimationComplete = () => {
                 className="revealed"
               />
             </div>
+            <div className="animated-bg"></div>
           </div>
       </div>
   );
