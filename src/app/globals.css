@@ -33,8 +33,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
-  padding: 4rem;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin: 3rem;
+  padding: 3rem;
 }
 
 .min-text {
@@ -59,38 +63,3 @@ body {
   line-height: 1.5;
   z-index: 1;
 }
-
-.animated-bg {
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 30%, #15ff00, transparent 40%),
-    radial-gradient(circle at 80% 20%, #027702, transparent 40%),
-    radial-gradient(circle at 50% 80%, #2ffa1d, transparent 40%);
-  filter: blur(140px);
-  animation: animateGradient 6s ease-in-out infinite;
-  mix-blend-mode: screen;
-  opacity: 1;
-}
-
-@keyframes animateGradient {
-  0% {
-    transform: translate(0%, 0%) scale(1);
-  }
-  25% {
-    transform: translate(5%, -5%) scale(1.1);
-  }
-  50% {
-    transform: translate(-10%, 5%) scale(1.2);
-  }
-  75% {
-    transform: translate(3%, -8%) scale(1.15);
-  }
-  100% {
-    transform: translate(0%, 0%) scale(1);
-  }
-}
-

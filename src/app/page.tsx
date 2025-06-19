@@ -3,7 +3,8 @@ import Aurora from './Aurora';
 import React, { useEffect, useState } from 'react';
 import LoginCard from '@/Componentes/Barralogin/Login';
 import DecryptedText from '@/Componentes/Animetiontexto/DecryptedText';
-import BlurText from '@/Componentes/Animetiontexto/BlurText';
+import SplitText from '@/Componentes/Animetiontexto/SplitText';
+import CarrouselArtitas from '@/Componentes/CarrouselArtista/CarrouselArtista';
 
 import Loading from '@/Componentes/Loading/Loading';
 
@@ -18,8 +19,8 @@ import Loading from '@/Componentes/Loading/Loading';
     return loading;
   }
 
-const handleAnimationComplete = () => {
-  console.log('Animation completed!');
+  const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
 };
 
   export default function Home() {
@@ -36,7 +37,7 @@ const handleAnimationComplete = () => {
          <LoginCard />
           <div>
             <div className='text-Musicalily'>
-              <BlurText text="Musicalily | Sportify!" delay={150} animateBy="words" direction="top" onAnimationComplete={handleAnimationComplete} className="revealed"/>
+              <SplitText text="Musicalily, Spotify!" className="text-Musicalily" delay={100} duration={0.6} ease="power3.out" splitType="chars" from={{ opacity: 0, y: 40 }} to={{ opacity: 1, y: 0 }} threshold={0.1} rootMargin="-100px" textAlign="center" onLetterAnimationComplete={handleAnimationComplete}/>
             </div>
             <div className='min-text'>
               <DecryptedText
@@ -47,7 +48,7 @@ const handleAnimationComplete = () => {
                 className="revealed"
               />
             </div>
-            <div className="animated-bg"></div>
+              <CarrouselArtitas />
           </div>
       </div>
   );

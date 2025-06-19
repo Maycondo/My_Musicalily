@@ -11,6 +11,7 @@
   "dependencies": {
     "aura-ui": "^1.0.8",
     "framer-motion": "^12.18.1",
+    "gsap": "^3.13.0",
     "motion-plus": "^1.2.0",
     "next": "15.3.3",
     "ogl": "^1.0.11",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/gsap": "^1.20.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
